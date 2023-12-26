@@ -1,0 +1,75 @@
+/* Content */
+.row {
+  padding: 0 5% 0 5%;  
+}
+  
+.col-sm-6 {
+  font-size: 18px;
+  letter-spacing: 2.5px;
+  line-height: 2;
+  padding: 50px;
+}
+  
+h2 {
+  font-size: 22px;
+}
+  
+h3 {
+  font-size: 18px;
+}
+  
+img {
+  width:100% ;
+  height: auto;
+}
+  
+  
+/* Icons */
+ul {  
+  list-style-type: none;
+  padding-left: 0;
+}
+  
+li {
+  font-family: 'Albert Sans', sans-serif;
+  display: inline-block;
+  padding: 5px;
+  font-size: 18px;
+  line-height: 0.1;
+}
+  
+.live li {
+  padding: 0;
+}
+  
+a {
+  text-decoration: none;
+  color: inherit;
+}
+  
+a:hover {
+  text-decoration: underline solid rgb(224, 26, 59) 25%;
+  color: inherit;
+}
+  
+a {
+  font-style: none;
+}
+
+fa-icon {
+  font-size: 35px;
+}
+  
+  
+  
+/* Page Minimized */
+@media (max-width: 780px) {
+  .row {
+    display: none;
+  }  
+
+  /* Displayed when Page Minimized */
+  .project {
+    display: block;
+  }
+}

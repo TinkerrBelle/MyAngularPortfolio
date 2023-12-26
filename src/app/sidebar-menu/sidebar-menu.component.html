@@ -1,0 +1,35 @@
+<header>
+
+  <!-- HAMBURGER ICON -->
+  <div class="menu-btn" [class.rotate]="rotate" (click)="toggleMenu()">
+    <div class="btn-line" [class.first]="first"></div>
+    <div class="btn-line" [class.second]="second"></div>
+    <div class="btn-line" [class.third]="third"></div>
+  </div>
+ 
+
+  <!-- SIDEBAR MENU-->
+  <nav class="menu" [ngClass]="{'show': showMenu}">
+
+    <ul class="menu-nav">
+      <li class="nav-item current">
+        <a href="#" class="nav-link" (click)="scrollToComponent('about')">ABOUT</a>
+
+      </li>
+
+      <li class="nav-item">
+        <a href="#" class="nav-link" (click)="scrollToComponent('skills')">SKILLS</a>
+      </li>
+
+      <li class="nav-item">
+        <a href="#" class="nav-link" (click)="scrollToComponent('currentProject')">PROJECTS</a>
+      </li>
+
+      <li class="nav-item">
+        <a href="#" class="nav-link" (click)="scrollToComponent('contact')">CONTACT</a>
+      </li>
+    </ul>
+
+  </nav>
+  
+</header>

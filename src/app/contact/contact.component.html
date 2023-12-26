@@ -1,0 +1,87 @@
+<div class="header">
+    <h1>CONTACT ME</h1>
+</div>
+
+
+<!-- CONTENT -->
+<div class="container">
+    <div class="row">
+        <div id="col1" class="col-sm-6">
+            <p>If you have any questions about me or my projects, or (politely) argue about the best models of the 2010s, I'm your girl!</p>
+            <br/>
+            <p>I'm available to grab a coffee and chat! Drop a comment, question, or concern, and thanks for stopping by!</p>
+            <br/>
+            <p>Straight shot to my inbox: <span id="email">PATRICIANONYE@GMAIL.COM</span></p>    
+        </div>
+    
+        <!--FORM-->
+        <div class="col-sm-6">
+            <div class="form">
+                <form class="form-field-container">
+                    <!-- Name -->
+                    <mat-form-field class="form-field" appearance="fill">
+                        <mat-label>Full Name</mat-label>
+                        <input matInput placeholder="Enter your name">
+                        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                    </mat-form-field>
+                    
+                    
+                    <!-- Email -->
+                    <mat-form-field class="form-field">
+                        <mat-label>Email</mat-label>
+                        <input type="email" 
+                                matInput 
+                                [formControl]="emailFormControl" 
+                                [errorStateMatcher]="matcher"
+                                placeholder="Enter a valid email address">
+                        <mat-hint>pat@example.com</mat-hint>
+                        <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                          Please enter a valid email address
+                        </mat-error>
+                        <mat-error *ngIf="emailFormControl.hasError('required')">
+                          Email is <strong>required</strong>
+                        </mat-error>
+                    </mat-form-field>
+                
+                
+                    <!-- Message -->
+                    <mat-form-field class="form-field">
+                        <mat-label>Leave a comment</mat-label>
+                        <textarea matInput placeholder="Enter your message"></textarea>
+                    </mat-form-field>
+                
+                    <br/>
+
+                    <!-- Button -->
+                    <div class="button">
+                        <button mat-raised-button color="warn">GET IN TOUCH</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+     
+</div>
+
+<!-- ICONS -->
+<div>
+    <div class="icons">
+        <table>
+            <tr>
+                <td>            
+                    <fa-icon [icon]="faGithub"></fa-icon> 
+                </td>
+                <td>            
+                    <fa-icon [icon]="faLinkedin"></fa-icon>
+                </td>
+                <td>            
+                    <fa-icon [icon]="faTwitter"></fa-icon>
+                </td>
+                <td>            
+                    <fa-icon [icon]="faSlack"></fa-icon>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</div>

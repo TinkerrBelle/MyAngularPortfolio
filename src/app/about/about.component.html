@@ -1,0 +1,72 @@
+<div class="content">
+    <!-- Header -->
+    <div class="header">
+        <h1>ABOUT ME</h1>
+    </div>
+    
+
+    <!-- Content -->
+    <div class="container">
+        <div class="row">
+            <div [@flyIn]="isVisible ? 'visible' : 'hidden'"  class="col-sm-4" >
+                <img src="assets/images/epn.jpeg"  alt="Meeeee">
+            </div>
+    
+            <div>
+                <div [@flyOut]="isVisible ? 'visible' : 'hidden'"  class="col-sm-8" >
+                    <br/>
+                    <p>Hello World! I'm Patricia Nonye, a Front-End Web Developer based out of Lagos. From 
+                        modelling on a stage to lines of code on a web page, I love combining the worlds of 
+                        logic and creative  design to make eye-catching, accessible, and user-friendly websites
+                        and applications.
+                    </p>
+        
+                    <p><span style="font-weight:bold;">Technology leads, society follows.</span> The move 
+                        towards increasing inclusivity and diversity in the industry through representation 
+                        is of importance to me.
+                    </p>
+
+                    <br/>
+
+                    <p>I'm excited to make the leap and continue refining my skills with the right company. 
+                        Drop me a line and/or your favorite restaurant in Lagos in the contact form below or 
+                        check me out at:
+                    </p>
+        
+
+                    <!-- Icons -->
+                    <div class="icons">
+                        <table>
+                            <tr>
+                                <td>            
+                                    <fa-icon [icon]="faGithub"></fa-icon> 
+                                </td>
+                                <td>            
+                                    <fa-icon [icon]="faLinkedin"></fa-icon>
+                                </td>
+                                <td>            
+                                    <fa-icon [icon]="faTwitter"></fa-icon>
+                                </td>
+                                <td>            
+                                    <fa-icon [icon]="faSlack"></fa-icon>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                </div>
+        
+            </div>
+      
+        </div>
+    
+    </div>
+
+
+    <!--THIS CONTENT DISPLAYS WHEN THE PAGE IS MINIMIZED-->
+    <div class="project" hidden>
+        <app-about-first-col></app-about-first-col>
+        <app-about-second-col></app-about-second-col>
+    </div>
+
+</div>

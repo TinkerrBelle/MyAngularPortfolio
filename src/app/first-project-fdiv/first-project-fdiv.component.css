@@ -1,0 +1,18 @@
+/* Content */  
+img {
+  width:100% ;
+  height: auto;
+}
+  
+.content {
+  padding: 20px;
+}
+
+
+
+/* Page Minimized to Phone size */
+@media (max-width: 590px) {
+  .content {
+    padding: 5px 20px 5px 20px;
+  }  
+}

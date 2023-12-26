@@ -1,0 +1,160 @@
+/* Navigation bar */  
+.mat-toolbar {
+    background-color: #030200;
+}
+
+.example-fill-remaining-space {
+    /* This fills the remaining space, by using flexbox. 
+       Every toolbar row uses a flexbox row layout. */
+    flex: 1 1 auto;
+}
+
+ul {
+    list-style-type: none;
+    padding-right: 200px;
+    background-color: #030200; 
+}
+
+li {
+    font-family: 'Albert Sans', sans-serif;
+    display: inline-block;
+    padding: 20px;
+    letter-spacing: 3px;
+    font-size: 18px;
+    color: #F8F8F8;
+}
+
+li:hover {
+    cursor: pointer;
+    text-decoration: underline solid rgb(224, 26, 59) 20%;
+    text-underline-offset: 0.4em;
+}
+
+
+/* Body */
+.body {
+    color: #f8f8f8;
+    background: black;
+    letter-spacing: 3px;
+}
+
+.header {
+    padding: 10% 0 0 5%;
+    height: 400px;
+}
+
+.h1 {
+    line-height: 1.4;
+    letter-spacing: .1rem;
+    font-size: 48px;
+}
+
+#name {
+    text-decoration: underline solid rgb(224, 26, 59) 10%;
+    text-underline-offset: 0.1em;
+}
+
+
+/* Change Background Toggle */
+.changeColor {
+    float: right;
+    padding: 10px;
+}
+
+.toggle {
+    width: 35px;
+    height: 65px;
+    background-color: #030200;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    border: 2px solid #f8f8f8;
+}
+
+.toggle-container {
+    width: 30px;
+    height: 60px;
+    background-color: #030200;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    text-align: center; 
+}
+  
+.toggle-button {
+    width: 30px;
+    height: 30px;
+    background-color: #f8f8f8;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: top 0.3s ease-in-out; /* Use CSS transitions for smooth movement */
+}
+  
+.toggle-button.active {
+    top: 30px; /* Move the button to the right when toggled */
+}
+
+fa-icon {
+    font-size: 23px;
+    color: rgb(224, 26, 59);  
+}
+  
+
+/* Back To Top Button */
+h3 {
+    text-align: center;
+    font-size: 22px;
+}
+
+h3:hover {
+    font-size: 26px;
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    background-color: inherit;
+}
+  
+
+
+@media (max-width: 780px) {
+    /* Nav Bar */
+    .toolbar {
+        display: none;
+    }
+    
+    .hamburger-menu {
+        display: block;
+    }
+
+
+    /* Body */
+    .header {
+        font-size: 20px;
+        padding: 150px 0px 0px 40px;
+    }
+
+    .h1 {
+        font-size: 40px;
+    }       
+}
+
+
+
+@media (max-width: 500px) {
+    /* Body */
+
+    .footer {
+        font-size: 9px;
+    }
+
+    .h1 {
+        font-size: 30px;
+    }
+    
+}

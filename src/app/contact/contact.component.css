@@ -1,0 +1,141 @@
+/* Header */
+.header {
+  padding: 0 0 0 5%;
+}
+   
+.container {
+  overflow: hidden;
+
+}
+
+
+h1 {
+  text-decoration: underline solid rgb(224, 26, 59) 10%;
+  text-underline-offset: 0.3em;
+  letter-spacing: 2.5px;
+  text-align: center;
+}
+
+
+/* Content */
+.row {
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 1.8;  
+}
+
+#col1 {
+  padding-top: 30px;
+  font-size:20px;
+}  
+
+#email {
+  font-weight: 500; 
+  letter-spacing: 3px;
+}
+
+#email:hover {
+  text-decoration: underline solid rgb(224, 26, 59) 10%;
+  cursor: pointer;
+}
+
+
+/* Form */
+.form-field-container {
+  display: flex;
+  flex-direction: column;
+}
+    
+.form-field {
+  margin-bottom: 10px; /* Adjust the value as per your desired spacing */
+}
+
+.button {
+  display: table-cell;
+  max-width: 600px;
+}
+
+.button .mat-mdc-button-base {
+  margin: 8px 8px 8px 0;
+}
+
+form {
+  background-color: inherit;
+  padding: 40px;
+}
+
+
+/* Icons */
+.icons {
+  padding: 0 10% 15% 10%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+table {
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+  
+td {
+  padding: 20px 75px 20px 75px;
+}
+   
+fa-icon {
+  font-size: 40px;
+}
+  
+fa-icon:hover {
+  color: rgb(224, 26, 59);
+  cursor: pointer;
+}
+  
+ 
+
+@media (max-width: 1100px) {
+  /* Header */
+  h1 {
+    text-align: left;
+  }
+ 
+  
+  /* Icons */
+  td {
+    padding: 20px 50px 20px 50px;
+  }
+}
+
+
+
+@media (max-width: 750px) {
+  /* Header */
+  h1 {
+    text-align: left;
+  }
+ 
+  
+  /* Icons */
+  td {
+    padding: 20px 35px 20px 35px;
+  }
+}
+
+
+
+
+/* Page Minimized to Phone size */
+@media (max-width: 590px) {
+  h1 {
+    text-align: center;
+  }
+
+  #col1 {
+    font-size:17px;
+  }
+
+  td {
+    padding: 20px 25px 20px 25px;
+  }
+}

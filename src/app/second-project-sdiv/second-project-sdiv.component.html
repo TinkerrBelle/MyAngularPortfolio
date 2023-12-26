@@ -1,0 +1,38 @@
+<!--THIS CONTENT DISPLAYS WHEN THE PAGE IS MINIMIZED-->
+<div class="container">
+    <div [@flyOut]="isVisible ? 'visible' : 'hidden'" class="content">
+        <br/>
+        <h2>GOT MUSIC?</h2>
+        <p>Turn it up and turn up.</p>
+    
+        <p>A music catalog made with React that allows you search your favourite artist's top albums. Albums come from Lastfm API. Designed using UI principles from Scrimba's UI/UX course.</p>
+    
+        <h3>MADE WITH</h3>
+    
+        <!-- Icons -->
+        <div class="icons">
+            <ul>
+                <li>
+                    <fa-icon [icon]="faGithub"></fa-icon> 
+                </li>
+                <li>
+                    <fa-icon [icon]="faLinkedin"></fa-icon>
+                </li>
+                <li>
+                    <fa-icon [icon]="faTwitter"></fa-icon>
+                </li>
+                <li>
+                    <fa-icon [icon]="faSlack"></fa-icon>
+                </li>
+            </ul>
+        </div>
+    
+        <div class="live">
+            <li><a href="#">LIVE SITE</a></li>
+            <span> | </span>
+            <li><a href="#">GITHUB</a></li>
+        </div>
+        
+    </div>
+    
+</div>

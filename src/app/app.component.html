@@ -1,0 +1,86 @@
+<!-- Navigation bar -->
+<mat-toolbar class="mat-toolbar">
+ 
+  <!-- This fills the remaining space of the current row -->
+  <span class="example-fill-remaining-space"></span>
+
+  <!-- Nav Links -->
+  <span class="toolbar">
+    <ul>
+      <li (click)="scroll(about)">ABOUT</li>
+      <li (click)="scroll(skills)">SKILLS</li>
+      <li (click)="scroll(projects)">PROJECTS</li>
+      <li (click)="scroll(contact)">CONTACT</li>
+    </ul>
+  </span>
+
+</mat-toolbar>
+
+
+<!-- Hamburger NavBar -->
+<div class="hamburger-menu" hidden>
+  <app-sidebar-menu></app-sidebar-menu>
+</div>
+
+
+<!-- BODY -->
+<div class="body" [style.background-color]="backgroundColor" [style.color]="color">
+  <div class="header">
+    <h1>
+      <span class="h1" id="name"><app-text-scramble></app-text-scramble></span><br/>
+      <span class="h1">FRONT-END</span><br/>
+      <span class="h1">WEB DEVELOPER</span>
+    </h1>
+  </div>
+  
+
+  <!-- Change Banground Toggle -->
+  <div class="changeColor">
+    <div class="toggle">
+      <div class="toggle-container" (click)="toggleButton()">
+        <fa-icon [icon]="sun"></fa-icon>
+        <div class="toggle-button" [class.active]="isToggled"></div>
+        <fa-icon [icon]="moon"></fa-icon>
+      </div>  
+    </div>
+  </div>
+
+  <br/><br/><br/><br/>
+
+  <!-- About Component -->
+  <div class="about" id="about" #about>
+    <app-about></app-about>
+  </div>
+  
+
+  <!-- Skills Component -->
+  <div class="skills" id="skills" #skills>
+    <app-skills></app-skills>
+  </div>
+
+  
+  <!-- Projects Component -->
+  <div class="currentProject" id="currentProject" #projects>
+    <app-current-projects></app-current-projects>
+  </div>
+  
+
+  <!-- Contact Component -->
+  <div class="contact" id="contact" #contact>
+    <app-contact></app-contact>
+  </div>
+
+
+  <!-- Back To Top button -->
+  <div style="height: 150px;">
+    <h3><button  (click)="gotoTop()">BACK TO TOP</button></h3>
+  </div>
+
+
+  <!-- Footer -->
+  <div class="footer">
+    <p style="text-align: center; font-weight: bold;">DESIGNED BY PATRICIA EZEOKOYE 2023</p>
+  </div>
+  
+</div>
+

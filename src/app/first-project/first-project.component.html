@@ -1,0 +1,57 @@
+<!-- 1 PERSONAL PROFILE -->
+<div class="container">
+    <div class="row">
+        <div [@flyIn]="isVisible ? 'visible' : 'hidden'" class="col-sm-6" id="img">
+            <img src="assets/images/profile.png"  alt="Meeeee">
+        </div>
+
+        <div>
+            <div [@flyOut]="isVisible ? 'visible' : 'hidden'" class="col-sm-6" id="content" >
+                <br/>
+                <h2>PERSONAL PROFILE</h2>
+                <p>Introduce yourself!</p>
+    
+                <p>A personal portfolio website made with Vanilla JS (no external libraries!). 
+                    It features a dynamic carousel navigation system allowing seamless navigation 
+                    between different sections using the next and previous buttons.
+                </p>
+
+                <h3>MADE WITH</h3>
+    
+                <!-- Icons -->
+                <div class="icons">
+                    <ul>
+                        <li>
+                            <fa-icon [icon]="faHtml5"></fa-icon> 
+                        </li>
+                        <li>
+                            <fa-icon [icon]="faCss3"></fa-icon>
+                        </li>
+                        <li>
+                            <fa-icon [icon]="faJs"></fa-icon>
+                        </li>
+                    </ul>
+                </div>
+
+                
+                <div class="live">
+                    <li><a href="#">LIVE SITE</a></li>
+                    <span> | </span>
+                    <li><a href="#">GITHUB</a></li>
+                </div>
+            </div>
+    
+        </div>
+  
+    </div>
+
+</div>
+
+
+<!--THIS CONTENT DISPLAYS WHEN THE PAGE IS MINIMIZED-->
+<div class="project" hidden>
+    <app-first-project-fdiv></app-first-project-fdiv>
+
+    <app-first-project-sdiv></app-first-project-sdiv>
+
+</div>
